@@ -12,7 +12,7 @@ nav {
     @include flex(flex-start, center, row);
     flex: 1 1 10rem;
     h1 {
-      margin: 3rem; // de revazut
+      margin: 2rem; // de revazut
     }
   }
   ul {
@@ -50,8 +50,9 @@ nav {
   position: absolute;
   top: 0%;
   right: 0%;
+  bottom: 0%;
   height: 100%; // de revazut
-  z-index: -1;
+  z-index: -2;
 }
 
 .intro-social {

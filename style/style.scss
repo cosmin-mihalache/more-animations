@@ -14,3 +14,56 @@ $gray-text: #2c2c2c;
 }
 @import 'global';
 @import 'intro';
+
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 50%;
+  }
+  .splash {
+    display: none;
+  }
+
+  svg {
+    width: 80%;
+    height: 80%;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .intro-images {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 45%;
+  }
+  
+  nav {
+    .logo {
+      @include flex(center, center, row);
+      flex: 1 1 30rem;
+    }
+
+    ul {
+      flex: 1 1 60rem;
+      margin: 1rem 0rem;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+
+  .intro-text {
+    text-align: center;
+  }
+
+  .intro-social {
+    @include flex(center, center, row);
+    margin: 2rem;
+  }
+}
